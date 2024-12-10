@@ -1,12 +1,12 @@
 from telegram.ext import Updater, CommandHandler
-from Packages import ognaruto
+# from Packages import ognaruto
 
 Token = "7918358947:AAEMO-d_oEjrBkvnBBTFyK286Zdw8b0z27w"
 
 updater = Updater("7918358947:AAEMO-d_oEjrBkvnBBTFyK286Zdw8b0z27w",use_context=True)
 dispatcher = updater.dispatcher
 
-n= ognaruto()
+# n= ognaruto()
 
 def help(update, context):
     update.message.reply_text(
