@@ -40,7 +40,7 @@ def naruto(update, context):
 
 
 def NarutoShippuden(update, context):
-    update.message.reply_text(" Naruto : https://shrinkme.ink/a71PD")
+    update.message.reply_text(" Naruto  Shippuden : https://shrinkme.ink/a71PD")
 
 
 def OnePunchMan(update, context):
@@ -54,7 +54,18 @@ def DeathNote(update, context):
 def Bleach(update, context):
     update.message.reply_text(" Bleach : https://en.shrinke.me/G8zS")
 
+def TowerofGod(update, context):
+    update.message.reply_text(" Tower   of God : https://shrinkme.ink/jJJxQx")
 
+
+def Tokyorevengers(update, context):
+    update.message.reply_text(" Tokyo  Revenge :https://shrinkme.ink/RtbcOeAr")
+    
+def BlueLock(update, context):
+    update.message.reply_text(" Blue  Lock : https://shrinkme.ink/w801")
+    
+    
+    
 dispatcher.add_handler(CommandHandler('start', start))
 dispatcher.add_handler(CommandHandler('naruto', naruto))
 dispatcher.add_handler(CommandHandler('anime', anime))
