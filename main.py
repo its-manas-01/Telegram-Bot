@@ -1,12 +1,16 @@
 from telegram.ext import Updater, CommandHandler
+from dotenv import load_dotenv
+import os
 from Packages.naruto import *
 
-Token = "7852341214:AAFRIO19O52wzdnSSi-1eSsbFiD4X4Qa3r4"
 
-updater = Updater("7852341214:AAFRIO19O52wzdnSSi-1eSsbFiD4X4Qa3r4",use_context=True)
+load_dotenv()
+Token = os.getenv("Token")
+
+updater = Updater(Token,use_context=True)
 dispatcher = updater.dispatcher
 
-n= ognaruto(Token)
+naruto= ognaruto(Token)
 
 def help(update, context):
     update.message.reply_text(
@@ -62,12 +66,7 @@ def anime(update, context):
 
 
 def Naruto(update, context):
-    # update.message.reply_text(
-    #     """
-    #     Naruto :
-    #     """
-    #     )
-    n.naruto1(update,context)
+    naruto.Sesaon1(update,context)
 
 
 def NarutoShippuden(update, context):
