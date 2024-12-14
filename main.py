@@ -1,9 +1,9 @@
 from telegram.ext import Updater, CommandHandler
 # from Packages import ognaruto
 
-Token = "7918358947:AAEMO-d_oEjrBkvnBBTFyK286Zdw8b0z27w"
+Token = "7852341214:AAFRIO19O52wzdnSSi-1eSsbFiD4X4Qa3r4"
 
-updater = Updater("7918358947:AAEMO-d_oEjrBkvnBBTFyK286Zdw8b0z27w",use_context=True)
+updater = Updater("7852341214:AAFRIO19O52wzdnSSi-1eSsbFiD4X4Qa3r4",use_context=True)
 dispatcher = updater.dispatcher
 
 # n= ognaruto()
