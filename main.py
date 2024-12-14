@@ -51,11 +51,12 @@ def anime(update, context):
         /365daysToTheWedding->365 days to  the Wedding
         /LogHorizen->Log Horizen
         /YouArMsServant->You ar Ms. Servant
-        /DADADAN->DA DA DAN
+        /DANDADAN->DAN DA DAN
         /soloLeveling->Solo Leveling
         /mashlemagicandmuscles->Mashle Magic and Mscles
         Anime Movies:
         /Iwanttoeatyourpancreas->I want to Eat Your Pancreas 
+        /spyxfamilycodewhite-> Spy x Family: Code White
         """
         )
 
@@ -209,14 +210,26 @@ def soloLeveling(update, context):
 def daystotheWedding(update,context):
     update.message.reply_text(
         """
-        This anime will be avlible in next week.
+        This anime will be avliable in next week.
         """
         )
     
-def DADADAN(update,context):
+def DANDADAN(update,context):
     update.message.reply_text(
         """
-        This anime will be avlible in next week.
+        DAN DA DAN:
+        season 1:
+            Episode 1:  https://www.udlinks.com/iLb6N4
+            Episode 2:  https://www.udlinks.com/64On33
+            Episode 3:  https://www.udlinks.com/jD6bjq
+            Episode 4:  https://www.udlinks.com/bF2Y2t
+            Episode 5:  https://en.mrproblogger.com/lUSMMRiZ
+            Episode 6:  https://en.mrproblogger.com/pry5X
+            Episode 7:  https://en.mrproblogger.com/SSpS
+            Episode 8:  https://en.mrproblogger.com/C7EOMV
+            Episode 9:  https://www.udlinks.com/BA7yX
+        Next Episode will be avliable in Friday.
+        If you want to watch other anime then click here 👉 /anime . 
         """
         )
  
@@ -256,13 +269,27 @@ def mashlemagicandmuscles(update, context):
         """
         )   
 
+# Mashle Magic and Mscles completed.
 
 def Iwanttoeatyourpancreas(update, context):
     update.message.reply_text(
         """
-        This anime will be avlible in next week.
+        I want to Eat Your Pancreas: https://www.udlinks.com/h24n6L
         """
         )
+    
+#  I want to Eat Your Pancreas completed.    
+    
+def spyxfamilycodewhite(update,context):
+    update.message.reply_text(
+        """
+        SpyX Family Code White: https://www.udlinks.com/RieCpR6
+        """
+        )
+
+
+
+
 dispatcher.add_handler(CommandHandler('start', start))
 dispatcher.add_handler(CommandHandler('help', help))
 dispatcher.add_handler(CommandHandler('anime', anime))
@@ -287,9 +314,10 @@ dispatcher.add_handler(CommandHandler('LogHorizen', LogHorizen))
 dispatcher.add_handler(CommandHandler('YouArMsServant', YouArMsServant))
 dispatcher.add_handler(CommandHandler('365daysToTheWedding', daystotheWedding))
 dispatcher.add_handler(CommandHandler('SoloLeveling', soloLeveling))
-dispatcher.add_handler(CommandHandler('DADADAN', DADADAN))
+dispatcher.add_handler(CommandHandler('DANDADAN', DANDADAN))
 dispatcher.add_handler(CommandHandler('mashlemagicandmuscles', mashlemagicandmuscles))
 dispatcher.add_handler(CommandHandler('Iwanttoeatyourpancreas', Iwanttoeatyourpancreas))
+dispatcher.add_handler(CommandHandler('spyxfamilycodewhite',spyxfamilycodewhite))
 
 
 
