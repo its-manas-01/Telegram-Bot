@@ -20,34 +20,42 @@ def help(update, context):
 
 
 def start(update, context):
-    update.message.reply_text("Welcome to Anime Hub.")
+    update.message.reply_text(
+        """
+        Welcome to Anime Hub.
+        please type /anime for choicing your anime.
+        """
+        )
 
 def anime(update, context):
     update.message.reply_text(
         """
         Anime Series:
-            /Naruto->1.Naruto
-            /NarutoShippuden->2.Naruto Shippuden
-            /OnePunchMan->3.  One Punch Man
-            /DeathNote->4.  Death Note
-            /Bleach->5.  Bleach
-            /DragonBallZ->6.  Dragon Ball Z
-            /TowerofGod->7.  Tower of God
-            /Tokyorevengers->8.  Tokyo  Revenge
-            /BlueLock->9.  Blue Lock
-            /ThatTimeIgotReincarnatedasASlime->10. That Time I Got Reincarnated as a Slime
-            /Blackclover->11. Black clover
-            /TrueBeauty->12. True Beauty
-            /NoLongerAllowedinAnotherWorld->13. No Longer Allowed in Another World
-            /WDNRMITW->14. Why Does Nobody Remember Me in This World
-            /SpyXFamily->15. Spy X Family
-            /TheImmortalKing->16. The Immortal King
-            /DrStone->17. Dr. Stone
-            /365daysToTheWedding->18. 365 days to  the Wedding
-            /LogHorizen->19. Log Horizen
-            /YouArMsServant->20. You ar Ms. Servant
-            /DADADAN->21. DA DA DAN
-            /soloLeveling->22. Solo Leveling
+        /Naruto->1.Naruto
+        /NarutoShippuden->2.Naruto Shippuden
+        /OnePunchMan->3.  One Punch Man
+        /DeathNote->4.  Death Note
+        /Bleach->5.  Bleach
+        /DragonBallZ->6.  Dragon Ball Z
+        /TowerofGod->7.  Tower of God
+        /Tokyorevengers->8.  Tokyo  Revenge
+        /BlueLock->9.  Blue Lock
+        /ThatTimeIgotReincarnatedasASlime->10. That Time I Got Reincarnated as a Slime
+        /Blackclover->11. Black clover
+        /TrueBeauty->12. True Beauty
+        /NoLongerAllowedinAnotherWorld->13. No Longer Allowed in Another World
+        /WDNRMITW->14. Why Does Nobody Remember Me in This World
+        /SpyXFamily->15. Spy X Family
+        /TheImmortalKing->16. The Immortal King
+        /DrStone->17. Dr. Stone
+        /365daysToTheWedding->18. 365 days to  the Wedding
+        /LogHorizen->19. Log Horizen
+        /YouArMsServant->20. You ar Ms. Servant
+        /DADADAN->21. DA DA DAN
+        /soloLeveling->22. Solo Leveling
+        /mashlemagicandmuscles->Mashle Magic and Mscles
+        Anime Movies:
+        /Iwanttoeatyourpancreas->I want to Eat Your Pancreas 
         """
         )
 
@@ -136,9 +144,30 @@ def daystotheWedding(update,context):
 def DADADAN(update,context):
     update.message.reply_text("This anime will be avlible in next week.")
     
-    
+ 
+def mashlemagicandmuscles(update, context):
+    update.message.reply_text(
+        """
+        Mashle Magic and Mscles : 
+        season 1: 
+            Episode 1:  https://en.shrinke.me/qv8RfvXT
+            Episode 2:  https://www.udlinks.com/Z85IAVT
+            Episode 3:  https://en.shrinke.me/DCMzB
+            Episode 4:  https://en.shrinke.me/blR3e
+            Episode 5:  https://www.udlinks.com/08St6y
+            Episode 6:  https://www.udlinks.com/iJOGuo
+            Episode 7:  https://www.udlinks.com/S6raAJLm
+            Episode 8:  https://www.udlinks.com/AWqcyX0
+            Episode 9:  https://www.udlinks.com/mFtD2IE
+            Episode 10: https://en.mrproblogger.com/grolTV
+            Episode 11: available very soon :
+            Episode 12: available very soon :
+        """
+        )   
 
-    
+
+def Iwanttoeatyourpancreas(update, context):
+      update.message.reply_text("This anime will be avlible in next week.")
     
 dispatcher.add_handler(CommandHandler('start', start))
 dispatcher.add_handler(CommandHandler('help', help))
@@ -165,6 +194,10 @@ dispatcher.add_handler(CommandHandler('YouArMsServant', YouArMsServant))
 dispatcher.add_handler(CommandHandler('365daysToTheWedding', daystotheWedding))
 dispatcher.add_handler(CommandHandler('SoloLeveling', soloLeveling))
 dispatcher.add_handler(CommandHandler('DADADAN', DADADAN))
+dispatcher.add_handler(CommandHandler('mashlemagicandmuscles', mashlemagicandmuscles))
+dispatcher.add_handler(CommandHandler('Iwanttoeatyourpancreas', Iwanttoeatyourpancreas))
+
+
 
 updater.start_polling()
 updater.idle()
