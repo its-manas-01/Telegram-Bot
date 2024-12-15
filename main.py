@@ -2,6 +2,8 @@ from telegram.ext import Updater, CommandHandler
 from dotenv import load_dotenv
 import os
 from Packages.naruto import *
+from Packages.towerofgod import *
+from Packages.bluelock import *
 
 
 load_dotenv()
@@ -11,6 +13,7 @@ updater = Updater(Token,use_context=True)
 dispatcher = updater.dispatcher
 
 naruto= ognaruto(Token)
+blulock = bluelock(Token)
 
 def help(update, context):
     update.message.reply_text(
@@ -115,45 +118,8 @@ def Tokyorevengers(update, context):
         )
     
 def BlueLock(update, context):
-    update.message.reply_text(
-        """ 
-        Blue  Lock :
-        Season 1:
-            Episode 1:
-            Episode 2:
-            Episode 3:
-            Episode 4:
-            Episode 5:
-            Episode 6:
-            Episode 7:
-            Episode 8:
-            Episode 9:
-            Episode 10:
-            Episode 11:
-            Episode 12:
-            Episode 13:
-            Episode 14:
-            Episode 15:
-            Episode 16:
-            Episode 17:
-            Episode 18:
-            Episode 19:
-            Episode 20:
-            Episode 21:
-            Episode 22:
-            Episode 23:
-            Episode 24:
-        Season 2:
-            Episode 1:
-            Episode 2:
-            Episode 3:
-            Episode 4:
-            Episode 5:
-            Episode 6:
-            Episode 7:
-            Episode 8:
-        """
-        )
+    blulock.season1(update, context)
+    blulock.season2(update, context)
     
 def ThatTimeIgotReincarnatedasASlime(update, context):
     update.message.reply_text(
