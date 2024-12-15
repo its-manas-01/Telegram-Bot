@@ -103,7 +103,6 @@ def Bleach(update, context):
 def TowerofGod(update, context):
     update.message.reply_text(
         """ 
-        Tower of God :
         """
         )
 
