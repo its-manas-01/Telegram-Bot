@@ -6,9 +6,10 @@ class bluelock:
         self.dispatcher = self.updater.dispatcher
         
         
-    def season1(self,update,context):
+    def Season1(self,update,context):
         update.message.reply_test(
         """
+        BLUE LOCK:
         Season 1:
             Episode 1:  https://www.udlinks.com/X6IbZz
             Episode 2:  https://www.udlinks.com/Zhs48Yj
@@ -35,22 +36,6 @@ class bluelock:
             Episode 23: https://www.udlinks.com/UroUft
             Episode 24: https://www.udlinks.com/RRB893
 
-        """
-        )
-
-    def Season2(self,update,context):
-        update.massage.reply_test(
-         """
-        Season 2:
-            Episode 1:  https://www.udlinks.com/ZQuO3j
-            Episode 2:  https://www.udlinks.com/ZR76JfpC
-            Episode 3:  https://www.udlinks.com/VrlXDF
-            Episode 4:  https://www.udlinks.com/mWDxp
-            Episode 5:  https://www.udlinks.com/IM28z
-            Episode 6:  https://www.udlinks.com/KOUnrSwB
-            Episode 7:  https://www.udlinks.com/eYWW
-            Episode 8:  https://www.udlinks.com/GG6jL
-            
         """
         )
         

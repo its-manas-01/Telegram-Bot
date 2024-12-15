@@ -1,6 +1,6 @@
 from telegram.ext import Updater, CommandHandler
 
-class towerofgod:
+class Towerofgod:
     def __init__(self,Token):
         self.updater = Updater(Token)
         self.dispatcher = self.updater.dispatcher
@@ -9,6 +9,7 @@ class towerofgod:
     def Season1(self,update,context):
         update.message.reply_text(
         """
+        Tower of God:
         Season 1:
             Episode 1:  https://www.udlinks.com/VHpsvMc
             Episode 2:  https://www.udlinks.com/EmVaga

@@ -4,7 +4,8 @@ import os
 from Packages.naruto import *
 from Packages.towerofgod import *
 from Packages.bluelock import *
-
+from Packages.towerofgod import *
+from Packages.mashlemagicandmuscles import *
 
 load_dotenv()
 Token = os.getenv("Token")
@@ -14,6 +15,8 @@ dispatcher = updater.dispatcher
 
 naruto= ognaruto(Token)
 blulock = bluelock(Token)
+towerofgod = Towerofgod(Token)
+mashlemagicandmuscles = Mashlemagicandmuscles(Token)
 
 def help(update, context):
     update.message.reply_text(
@@ -104,10 +107,8 @@ def Bleach(update, context):
         )
 
 def TowerofGod(update, context):
-    update.message.reply_text(
-        """ 
-        """
-        )
+    towerofgod.Season1(update, context)
+    towerofgod.Season2(update, context)
 
 
 def Tokyorevengers(update, context):
@@ -118,8 +119,8 @@ def Tokyorevengers(update, context):
         )
     
 def BlueLock(update, context):
-    blulock.season1(update, context)
-    blulock.season2(update, context)
+    blulock.Season1(update, context)
+    blulock.Season2(update, context)
     
 def ThatTimeIgotReincarnatedasASlime(update, context):
     update.message.reply_text(
@@ -232,43 +233,11 @@ def DANDADAN(update,context):
         """
         )
  
-def mashlemagicandmuscles(update, context):
-    update.message.reply_text(
-        """
-        Mashle Magic and Mscles : 
-        season 1: 
-            Episode 1:  https://en.shrinke.me/qv8RfvXT
-            Episode 2:  https://www.udlinks.com/Z85IAVT
-            Episode 3:  https://en.shrinke.me/DCMzB
-            Episode 4:  https://en.shrinke.me/blR3e
-            Episode 5:  https://www.udlinks.com/08St6y
-            Episode 6:  https://www.udlinks.com/iJOGuo
-            Episode 7:  https://www.udlinks.com/S6raAJLm
-            Episode 8:  https://www.udlinks.com/AWqcyX0
-            Episode 9:  https://www.udlinks.com/mFtD2IE
-            Episode 10: https://en.mrproblogger.com/grolTV
-            Episode 11: https://www.udlinks.com/ntyx
-            Episode 12: https://en.mrproblogger.com/UA9RcSy
-        season 2:
-            Episode 1:  https://www.udlinks.com/VgYk
-            Episode 2:  https://en.mrproblogger.com/OZn7
-            Episode 3:  https://www.udlinks.com/wKldtJV
-            Episode 4:  https://en.mrproblogger.com/Bxcc4Rbi
-            Episode 5:  https://www.udlinks.com/hQ6BN
-            Episode 6:  https://en.mrproblogger.com/9baR
-            Episode 7:  https://www.udlinks.com/58vZzs
-            Episode 8:  https://www.udlinks.com/xiG0F
-            Episode 9:  https://www.udlinks.com/Lauta4
-            Episode 10: https://en.mrproblogger.com/VI39eO
-            Episode 11: https://en.mrproblogger.com/AsW3t2k
-            Episode 12: https://www.udlinks.com/5Y2qys
-        Mashle Magic and Mscles has been completed.
-        Please wait for next season.
-        If you want to watch other anime then click here 👉 /anime . 
-        """
-        )   
+def MashleMagicandMuscles(update, context):
+    mashlemagicandmuscles.Season1(update, context)
+    mashlemagicandmuscles.Season2(update, context)
 
-# Mashle Magic and Mscles completed.
+
 
 def Iwanttoeatyourpancreas(update, context):
     update.message.reply_text(
@@ -314,7 +283,7 @@ dispatcher.add_handler(CommandHandler('YouArMsServant', YouArMsServant))
 dispatcher.add_handler(CommandHandler('365daysToTheWedding', daystotheWedding))
 dispatcher.add_handler(CommandHandler('SoloLeveling', soloLeveling))
 dispatcher.add_handler(CommandHandler('DANDADAN', DANDADAN))
-dispatcher.add_handler(CommandHandler('mashlemagicandmuscles', mashlemagicandmuscles))
+dispatcher.add_handler(CommandHandler('mashlemagicandmuscles', MashleMagicandMuscles))
 dispatcher.add_handler(CommandHandler('Iwanttoeatyourpancreas', Iwanttoeatyourpancreas))
 dispatcher.add_handler(CommandHandler('spyxfamilycodewhite',spyxfamilycodewhite))
 
