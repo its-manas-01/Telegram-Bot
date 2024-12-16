@@ -6,6 +6,7 @@ from Packages.towerofgod import *
 from Packages.bluelock import *
 from Packages.towerofgod import *
 from Packages.mashlemagicandmuscles import *
+from Packages.dandadan import *
 
 load_dotenv()
 Token = os.getenv("Token")
@@ -17,14 +18,15 @@ naruto= ognaruto(Token)
 blulock = bluelock(Token)
 towerofgod = Towerofgod(Token)
 mashlemagicandmuscles = Mashlemagicandmuscles(Token)
+dandadan = Dandadan(Token)
 
 def help(update, context):
     update.message.reply_text(
         """
         /start ->welcome to anime Hub
         /help -> shows this help message
-    
         /anime -> lists anime series
+        /contactus -> For contact the owner.
         """
     )
 
@@ -34,9 +36,18 @@ def start(update, context):
         """
         Welcome to Anime Hub.
         please type /anime for choosing your anime.
+        please type /help for help.
         """
         )
 
+def contactus(update, context):
+    update.message.reply_text(
+        """
+        For contacting the owner:
+        Telegram: @manas002
+        instagram: @Anime_Jod.01
+        """
+    )
 def anime(update, context):
     update.message.reply_text(
         """
@@ -215,23 +226,7 @@ def daystotheWedding(update,context):
         )
     
 def DANDADAN(update,context):
-    update.message.reply_text(
-        """
-        DAN DA DAN:
-        season 1:
-            Episode 1:  https://www.udlinks.com/iLb6N4
-            Episode 2:  https://www.udlinks.com/64On33
-            Episode 3:  https://www.udlinks.com/jD6bjq
-            Episode 4:  https://www.udlinks.com/bF2Y2t
-            Episode 5:  https://en.mrproblogger.com/lUSMMRiZ
-            Episode 6:  https://en.mrproblogger.com/pry5X
-            Episode 7:  https://en.mrproblogger.com/SSpS
-            Episode 8:  https://en.mrproblogger.com/C7EOMV
-            Episode 9:  https://www.udlinks.com/BA7yX
-        Next Episode will be avliable in Friday.
-        If you want to watch other anime then click here 👉 /anime . 
-        """
-        )
+    dandadan.Season1(update,context)
  
 def MashleMagicandMuscles(update, context):
     mashlemagicandmuscles.Season1(update, context)
@@ -245,8 +240,7 @@ def Iwanttoeatyourpancreas(update, context):
         I want to Eat Your Pancreas: https://www.udlinks.com/h24n6L
         """
         )
-    
-#  I want to Eat Your Pancreas completed.    
+       
     
 def spyxfamilycodewhite(update,context):
     update.message.reply_text(
@@ -261,6 +255,7 @@ def spyxfamilycodewhite(update,context):
 dispatcher.add_handler(CommandHandler('start', start))
 dispatcher.add_handler(CommandHandler('help', help))
 dispatcher.add_handler(CommandHandler('anime', anime))
+dispatcher.add_handler(CommandHandler('contactus', contactus))
 dispatcher.add_handler(CommandHandler('Naruto', Naruto))
 dispatcher.add_handler(CommandHandler('NarutoShippuden', NarutoShippuden))
 dispatcher.add_handler(CommandHandler('OnePunchMan', OnePunchMan))
