@@ -7,7 +7,7 @@ class Spyxfamily:
 
 
     def Season1(self,update,context):
-       update.message.reply_test(
+       update.message.reply_text(
         """
         Season 1:
             Episode 1:   https://www.udlinks.com/mrfb

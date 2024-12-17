@@ -7,7 +7,7 @@ class bluelock:
         
         
     def Season1(self,update,context):
-        update.message.reply_test(
+        update.message.reply_text(
         """
         BLUE LOCK:
         Season 1:
@@ -41,7 +41,7 @@ class bluelock:
         
         
     def Season2(self,update,context):
-        update.massage.reply_test(
+        update.message.reply_text(
          """
         Season 2:
             Episode 1:  https://www.udlinks.com/ZQuO3j
