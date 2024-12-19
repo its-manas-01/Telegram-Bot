@@ -10,6 +10,10 @@ from Packages.Spyxfamily import *
 from Packages.rezero import *
 from Packages.dayofwedding import *
 from Packages.blackclover import *
+from Packages.thatTimeIgotReincarnatedasASlime import *
+from Packages.tokyorevenge import *
+from Packages.truebeauty import *
+from Packages.sololeveling import *
 
 load_dotenv()
 Token = os.getenv("Token")
@@ -26,6 +30,10 @@ spyxfamily = Spyxfamily(Token)
 dayofwedding = Dayofwedding(Token)
 rezero = Rezero(Token)
 blackclover = BlackClover(Token)
+thatTimeIgotReincarnatedasASlime = ThattimeIgotreincarnatedasAslime(Token)
+tokyoevengers = Tokyoevengers(Token)
+truebeauty = Truebeauty(Token)
+soloLeveling = Sololeveling(Token)
 
 def help(update, context):
     update.message.reply_text(
