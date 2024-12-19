@@ -7,10 +7,8 @@ from Packages.bluelock import *
 from Packages.mashlemagicandmuscles import *
 from Packages.dandadan import *
 from Packages.Spyxfamily import *
+from Packages.rezero import *
 from Packages.dayofwedding import *
-from Packages.truebeauty import *
-from Packages.tokyorevenge import *
-from Packages.sololeveling import *
 
 load_dotenv()
 Token = os.getenv("Token")
@@ -25,9 +23,6 @@ mashlemagicandmuscles = Mashlemagicandmuscles(Token)
 dandadan = Dandadan(Token)
 spyxfamily = Spyxfamily(Token)
 dayofwedding = Dayofwedding(Token)
-tokyoevengers = Tokyoevengers(Token)
-soloLeveling = Sololeveling(Token)
-truebeauty = Truebeauty(Token)
 
 def help(update, context):
     update.message.reply_text(
@@ -84,6 +79,7 @@ def anime(update, context):
         /DANDADAN->DAN DA DAN
         /soloLeveling->Solo Leveling
         /mashlemagicandmuscles->Mashle Magic and Mscles
+        /rezero->Re Zero
         Anime Movies:
         /Iwanttoeatyourpancreas->I want to Eat Your Pancreas 
         /spyxfamilycodewhite-> Spy x Family: Code White
@@ -155,11 +151,7 @@ def DragonBallZ(update, context):
     update.message.reply_text("This anime will be avlible in next week.")
 
 def Blackclover(update, context):
-    update.message.reply_text(
-        """
-        This anime will be avlible in next week.
-        """
-        )
+    blackclover.Season1(update, context)
     
 
 def TrueBeauty(update, context):
@@ -245,6 +237,8 @@ def spyxfamilycodewhite(update,context):
         )
 
 
+def ReZero(update, context):
+    rezero.Season1(update, context)
 
 
 dispatcher.add_handler(CommandHandler('start', start))
@@ -276,6 +270,7 @@ dispatcher.add_handler(CommandHandler('DANDADAN', DANDADAN))
 dispatcher.add_handler(CommandHandler('mashlemagicandmuscles', MashleMagicandMuscles))
 dispatcher.add_handler(CommandHandler('Iwanttoeatyourpancreas', Iwanttoeatyourpancreas))
 dispatcher.add_handler(CommandHandler('spyxfamilycodewhite',spyxfamilycodewhite))
+dispatcher.add_handler(CommandHandler('rezero',ReZero))
 
 
 
