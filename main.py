@@ -9,6 +9,7 @@ from Packages.dandadan import *
 from Packages.Spyxfamily import *
 from Packages.rezero import *
 from Packages.dayofwedding import *
+from Packages.blackclover import *
 
 load_dotenv()
 Token = os.getenv("Token")
@@ -24,6 +25,7 @@ dandadan = Dandadan(Token)
 spyxfamily = Spyxfamily(Token)
 dayofwedding = Dayofwedding(Token)
 rezero = Rezero(Token)
+blackclover = BlackClover(Token)
 
 def help(update, context):
     update.message.reply_text(
@@ -155,11 +157,7 @@ def DragonBallZ(update, context):
     update.message.reply_text("This anime will be avlible in next week.")
 
 def Blackclover(update, context):
-    update.message.reply_text(
-        """
-        This anime will be avlible in next week.
-        """
-        )
+    blackclover.Season1(update, context)
     
 
 def TrueBeauty(update, context):
