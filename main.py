@@ -7,6 +7,7 @@ from Packages.bluelock import *
 from Packages.mashlemagicandmuscles import *
 from Packages.dandadan import *
 from Packages.Spyxfamily import *
+from Packages.dayofwedding import *
 
 load_dotenv()
 Token = os.getenv("Token")
@@ -20,6 +21,7 @@ towerofgod = Towerofgod(Token)
 mashlemagicandmuscles = Mashlemagicandmuscles(Token)
 dandadan = Dandadan(Token)
 spyxfamily = Spyxfamily(Token)
+dayofwedding = Dayofwedding(Token)
 
 def help(update, context):
     update.message.reply_text(
@@ -84,7 +86,11 @@ def anime(update, context):
 
 
 def Naruto(update, context):
-    naruto.Sesaon1(update,context)
+    update.message.reply_text(
+        """
+        This anime will be avlible in next week.
+        """
+        )
 
 
 def NarutoShippuden(update, context):
@@ -217,11 +223,7 @@ def soloLeveling(update, context):
     
     
 def daystotheWedding(update,context):
-    update.message.reply_text(
-        """
-        This anime will be avliable in next week.
-        """
-        )
+   dayofwedding.Season1(update,context)
     
 def DANDADAN(update,context):
     dandadan.Season1(update,context)
