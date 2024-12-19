@@ -4,9 +4,9 @@ import os
 from Packages.naruto import *
 from Packages.towerofgod import *
 from Packages.bluelock import *
-from Packages.towerofgod import *
 from Packages.mashlemagicandmuscles import *
 from Packages.dandadan import *
+from Packages.Spyxfamily import *
 
 load_dotenv()
 Token = os.getenv("Token")
@@ -19,6 +19,7 @@ blulock = bluelock(Token)
 towerofgod = Towerofgod(Token)
 mashlemagicandmuscles = Mashlemagicandmuscles(Token)
 dandadan = Dandadan(Token)
+spyxfamily = Spyxfamily(Token)
 
 def help(update, context):
     update.message.reply_text(
@@ -176,11 +177,8 @@ def WDNRMITW(update,context):
         )
     
 def SpyXFamily(update, context):
-    update.message.reply_text(
-        """
-        This anime will be avlible in next week.
-        """
-        )
+    spyxfamily.Season1(update, context)
+    spyxfamily.Season2(update, context)
     
 def TheImmortalKing(update, context):
     update.message.reply_text(
