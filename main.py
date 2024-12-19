@@ -7,6 +7,7 @@ from Packages.bluelock import *
 from Packages.mashlemagicandmuscles import *
 from Packages.dandadan import *
 from Packages.Spyxfamily import *
+from Packages.rezero import *
 from Packages.dayofwedding import *
 
 load_dotenv()
@@ -22,6 +23,7 @@ mashlemagicandmuscles = Mashlemagicandmuscles(Token)
 dandadan = Dandadan(Token)
 spyxfamily = Spyxfamily(Token)
 dayofwedding = Dayofwedding(Token)
+rezero = Rezero(Token)
 
 def help(update, context):
     update.message.reply_text(
@@ -78,6 +80,7 @@ def anime(update, context):
         /DANDADAN->DAN DA DAN
         /soloLeveling->Solo Leveling
         /mashlemagicandmuscles->Mashle Magic and Mscles
+        /rezero->Re Zero
         Anime Movies:
         /Iwanttoeatyourpancreas->I want to Eat Your Pancreas 
         /spyxfamilycodewhite-> Spy x Family: Code White
@@ -250,6 +253,8 @@ def spyxfamilycodewhite(update,context):
         )
 
 
+def ReZero(update, context):
+    rezero.Season1(update, context)
 
 
 dispatcher.add_handler(CommandHandler('start', start))
@@ -281,6 +286,7 @@ dispatcher.add_handler(CommandHandler('DANDADAN', DANDADAN))
 dispatcher.add_handler(CommandHandler('mashlemagicandmuscles', MashleMagicandMuscles))
 dispatcher.add_handler(CommandHandler('Iwanttoeatyourpancreas', Iwanttoeatyourpancreas))
 dispatcher.add_handler(CommandHandler('spyxfamilycodewhite',spyxfamilycodewhite))
+dispatcher.add_handler(CommandHandler('rezero',ReZero))
 
 
 
