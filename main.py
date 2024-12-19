@@ -10,7 +10,6 @@ from Packages.Spyxfamily import *
 from Packages.rezero import *
 from Packages.dayofwedding import *
 from Packages.blackclover import *
-from Packages.thatTimeIgotReincarnatedasASlime import *
 
 load_dotenv()
 Token = os.getenv("Token")
@@ -27,7 +26,6 @@ spyxfamily = Spyxfamily(Token)
 dayofwedding = Dayofwedding(Token)
 rezero = Rezero(Token)
 blackclover = BlackClover(Token)
-thatTimeIgotReincarnatedasASlime = ThattimeIgotreincarnatedasAslime(Token)
 
 def help(update, context):
     update.message.reply_text(
@@ -137,11 +135,8 @@ def TowerofGod(update, context):
 
 
 def Tokyorevengers(update, context):
-    update.message.reply_text(
-        """
-        Tokyo  Revenge :
-        """
-        )
+    tokyoevengers.Season1(update, context)
+    tokyoevengers.Season2(update, context)
     
 def BlueLock(update, context):
     blulock.Season1(update, context)
@@ -160,11 +155,7 @@ def Blackclover(update, context):
     
 
 def TrueBeauty(update, context):
-    update.message.reply_text(
-        """
-        This anime will be avlible in next week.
-        """
-        )
+    truebeauty.Season1(update, context)
     
     
 def NoLongerAllowedinAnotherWorld(update, context):
@@ -214,12 +205,8 @@ def YouArMsServant(update, context):
         """
         )
     
-def soloLeveling(update, context):
-    update.message.reply_text(
-        """
-        This anime will be avlible in next week.
-        """
-        )
+def SoloLeveling(update, context):
+    soloLeveling.Season1(update, context)
     
     
 def daystotheWedding(update,context):
@@ -278,7 +265,7 @@ dispatcher.add_handler(CommandHandler('DrStone', DrStone))
 dispatcher.add_handler(CommandHandler('LogHorizen', LogHorizen))
 dispatcher.add_handler(CommandHandler('YouArMsServant', YouArMsServant))
 dispatcher.add_handler(CommandHandler('365daysToTheWedding', daystotheWedding))
-dispatcher.add_handler(CommandHandler('SoloLeveling', soloLeveling))
+dispatcher.add_handler(CommandHandler('SoloLeveling', SoloLeveling))
 dispatcher.add_handler(CommandHandler('DANDADAN', DANDADAN))
 dispatcher.add_handler(CommandHandler('mashlemagicandmuscles', MashleMagicandMuscles))
 dispatcher.add_handler(CommandHandler('Iwanttoeatyourpancreas', Iwanttoeatyourpancreas))
