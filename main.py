@@ -94,6 +94,7 @@ def anime(update, context):
         Anime Movies:
         /Iwanttoeatyourpancreas->I want to Eat Your Pancreas 
         /spyxfamilycodewhite-> Spy x Family: Code White
+        /asilentvoice->A Silent Voice
         """
         )
 
@@ -287,7 +288,7 @@ dispatcher.add_handler(CommandHandler('mashlemagicandmuscles', MashleMagicandMus
 dispatcher.add_handler(CommandHandler('Iwanttoeatyourpancreas', Iwanttoeatyourpancreas))
 dispatcher.add_handler(CommandHandler('spyxfamilycodewhite',spyxfamilycodewhite))
 dispatcher.add_handler(CommandHandler('rezero',ReZero))
-
+dispatcher.add_handler(CommandHandler('asilentvoice',Asilentvoice))
 
 
 updater.start_polling()
