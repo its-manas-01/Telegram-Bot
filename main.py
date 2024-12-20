@@ -94,6 +94,7 @@ def anime(update, context):
         Anime Movies:
         /Iwanttoeatyourpancreas->I want to Eat Your Pancreas 
         /spyxfamilycodewhite-> Spy x Family: Code White
+        /asilentvoice->A Silent Voice
         """
         )
 
@@ -249,6 +250,14 @@ def ReZero(update, context):
     rezero.Season1(update, context)
 
 
+def Asilentvoice(update, context):
+    update.message.reply_text(
+        """
+        A Silent Voice: https://www.udlinks.com/sWZNi6P
+        """
+        )
+
+
 dispatcher.add_handler(CommandHandler('start', start))
 dispatcher.add_handler(CommandHandler('help', help))
 dispatcher.add_handler(CommandHandler('anime', anime))
@@ -279,7 +288,7 @@ dispatcher.add_handler(CommandHandler('mashlemagicandmuscles', MashleMagicandMus
 dispatcher.add_handler(CommandHandler('Iwanttoeatyourpancreas', Iwanttoeatyourpancreas))
 dispatcher.add_handler(CommandHandler('spyxfamilycodewhite',spyxfamilycodewhite))
 dispatcher.add_handler(CommandHandler('rezero',ReZero))
-
+dispatcher.add_handler(CommandHandler('asilentvoice',Asilentvoice))
 
 
 updater.start_polling()
