@@ -14,6 +14,7 @@ from Packages.thatTimeIgotReincarnatedasASlime import *
 from Packages.tokyorevenge import *
 from Packages.truebeauty import *
 from Packages.sololeveling import *
+from Packages.loghorizen import *
 
 load_dotenv()
 Token = os.getenv("Token")
@@ -34,7 +35,7 @@ thatTimeIgotReincarnatedasASlime = ThattimeIgotreincarnatedasAslime(Token)
 tokyoevengers = Tokyoevengers(Token)
 truebeauty = Truebeauty(Token)
 soloLeveling = Sololeveling(Token)
-
+loghorizen = Loghorizen(Token)
 def help(update, context):
     update.message.reply_text(
         """
@@ -201,11 +202,8 @@ def DrStone(update, context):
         )
     
 def LogHorizen(update, context):
-    update.message.reply_text(
-        """
-        This anime will be avlible in next week.
-        """
-        )
+    loghorizen.Season1(update, context)
+    loghorizen.Season2(update, context)
     
 def YouArMsServant(update, context):
     update.message.reply_text(
