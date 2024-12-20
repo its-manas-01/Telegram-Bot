@@ -42,10 +42,10 @@ class Tokyoevengers:
             Episode 1:  https://www.udlinks.com/DSzyLr
             Episode 2:  https://www.udlinks.com/lyUG
             Episode 3:  https://www.udlinks.com/u3TlVHb4
-            Episode 4:  
-            Episode 5:  
+            Episode 4:  https://www.udlinks.com/Erfzgs
+            Episode 5:  https://www.udlinks.com/2A3P1HQM
             Episode 6:  
-            Episode 7:  
+            Episode 7:  https://www.udlinks.com/CwMmvH
             Episode 8:  
             Episode 9:  
             Episode 10: 

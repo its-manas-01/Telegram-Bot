@@ -241,6 +241,14 @@ def ReZero(update, context):
     rezero.Season1(update, context)
 
 
+def Asilentvoice(update, context):
+    update.message.reply_text(
+        """
+        A Silent Voice: https://www.udlinks.com/sWZNi6P
+        """
+        )
+
+
 dispatcher.add_handler(CommandHandler('start', start))
 dispatcher.add_handler(CommandHandler('help', help))
 dispatcher.add_handler(CommandHandler('anime', anime))
