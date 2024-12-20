@@ -9,6 +9,11 @@ from Packages.dandadan import *
 from Packages.Spyxfamily import *
 from Packages.rezero import *
 from Packages.dayofwedding import *
+from Packages.blackclover import *
+from Packages.thatTimeIgotReincarnatedasASlime import *
+from Packages.tokyorevenge import *
+from Packages.truebeauty import *
+from Packages.sololeveling import *
 
 load_dotenv()
 Token = os.getenv("Token")
@@ -23,6 +28,12 @@ mashlemagicandmuscles = Mashlemagicandmuscles(Token)
 dandadan = Dandadan(Token)
 spyxfamily = Spyxfamily(Token)
 dayofwedding = Dayofwedding(Token)
+rezero = Rezero(Token)
+blackclover = BlackClover(Token)
+thatTimeIgotReincarnatedasASlime = ThattimeIgotreincarnatedasAslime(Token)
+tokyoevengers = Tokyoevengers(Token)
+truebeauty = Truebeauty(Token)
+soloLeveling = Sololeveling(Token)
 
 def help(update, context):
     update.message.reply_text(
@@ -140,11 +151,8 @@ def BlueLock(update, context):
     blulock.Season2(update, context)
     
 def ThatTimeIgotReincarnatedasASlime(update, context):
-    update.message.reply_text(
-        """
-        This anime will be avlible in next week.
-        """
-        )
+    thatTimeIgotReincarnatedasASlime.Season1(update, context)
+    thatTimeIgotReincarnatedasASlime.Season2(update, context)
     
 
 def DragonBallZ(update, context):
