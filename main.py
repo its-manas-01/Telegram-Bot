@@ -31,7 +31,7 @@ dayofwedding = Dayofwedding(Token)
 rezero = Rezero(Token)
 blackclover = BlackClover(Token)
 thatTimeIgotReincarnatedasASlime = ThattimeIgotreincarnatedasAslime(Token)
-tokyoevengers = Tokyoevengers(Token)
+tokyorevengers = TokyoRevengers(Token)
 truebeauty = Truebeauty(Token)
 soloLeveling = Sololeveling(Token)
 
@@ -144,8 +144,8 @@ def TowerofGod(update, context):
 
 
 def Tokyorevengers(update, context):
-    tokyoevengers.Season1(update, context)
-    tokyoevengers.Season2(update, context)
+    tokyorevengers.Season1(update, context)
+    tokyorevengers.Season2(update, context)
     
 def BlueLock(update, context):
     blulock.Season1(update, context)

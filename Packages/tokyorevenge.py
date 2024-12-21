@@ -1,6 +1,6 @@
 from telegram.ext import Updater, CommandHandler
 
-class Tokyoevengers:
+class TokyoRevengers:
     def _init_(self,Token):
         self.updater = Updater(Token)
         self.dispatcher = self.updater.dispatcher
@@ -44,12 +44,13 @@ class Tokyoevengers:
             Episode 3:  https://www.udlinks.com/u3TlVHb4
             Episode 4:  https://www.udlinks.com/Erfzgs
             Episode 5:  https://www.udlinks.com/2A3P1HQM
-            Episode 6:  
+            Episode 6:  https://www.udlinks.com/Erfzgs
             Episode 7:  https://www.udlinks.com/CwMmvH
-            Episode 8:  
-            Episode 9:  
-            Episode 10: 
-            Episode 11: 
-            Episode 12: 
+            Episode 8:  https://www.udlinks.com/85zpi
+            Episode 9:  https://www.udlinks.com/bqlyvj
+            Episode 10: https://www.udlinks.com/3KgT0X
+            Episode 11: https://www.udlinks.com/jxf7J0e
+            Episode 12: https://www.udlinks.com/Erfzgs
+            Episode 13: https://www.udlinks.com/ATuK
         """
         )
