@@ -15,6 +15,7 @@ from Packages.tokyorevenge import *
 from Packages.truebeauty import *
 from Packages.sololeveling import *
 from Packages.loghorizen import *
+from Packages.thedailylifeofimmortalking import *
 
 load_dotenv()
 Token = os.getenv("Token")
@@ -36,6 +37,10 @@ tokyoevengers = Tokyoevengers(Token)
 truebeauty = Truebeauty(Token)
 soloLeveling = Sololeveling(Token)
 loghorizen = Loghorizen(Token)
+thedailylifeofimmortalking = ThedailylifeofimmortalKing(Token)
+
+
+
 def help(update, context):
     update.message.reply_text(
         """
@@ -83,7 +88,7 @@ def anime(update, context):
         /NoLongerAllowedinAnotherWorld->No Longer Allowed in Another World
         /WDNRMITW->Why Does Nobody Remember Me in This World
         /SpyXFamily->Spy X Family
-        /TheImmortalKing->The Immortal King
+        /ThedailylifeofImmortalKing->The Daily Life of Immortal King
         /DrStone->Dr. Stone
         /365daysToTheWedding->365 days to  the Wedding
         /LogHorizen->Log Horizen
@@ -187,12 +192,11 @@ def SpyXFamily(update, context):
     spyxfamily.Season1(update, context)
     spyxfamily.Season2(update, context)
     
-def TheImmortalKing(update, context):
-    update.message.reply_text(
-        """
-        This anime will be avlible in next week.
-        """
-        )
+def ThedailylifeofImmortalKing(update, context):
+    thedailylifeofimmortalking.Season1(update, context)
+    thedailylifeofimmortalking.Season2(update, context)
+    thedailylifeofimmortalking.Season3(update, context)
+    thedailylifeofimmortalking.Season4(update, context)
     
 def DrStone(update, context):
     update.message.reply_text(
@@ -275,7 +279,7 @@ dispatcher.add_handler(CommandHandler('TrueBeauty', TrueBeauty))
 dispatcher.add_handler(CommandHandler('NoLongerAllowedinAnotherWorld', NoLongerAllowedinAnotherWorld))
 dispatcher.add_handler(CommandHandler('WDNRMITW', WDNRMITW))
 dispatcher.add_handler(CommandHandler('SpyXFamily', SpyXFamily))
-dispatcher.add_handler(CommandHandler('TheImmortalKing', TheImmortalKing))
+dispatcher.add_handler(CommandHandler('ThedailylifeofImmortalKing', ThedailylifeofImmortalKing))
 dispatcher.add_handler(CommandHandler('DrStone', DrStone))
 dispatcher.add_handler(CommandHandler('LogHorizen', LogHorizen))
 dispatcher.add_handler(CommandHandler('YouArMsServant', YouArMsServant))
