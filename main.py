@@ -33,12 +33,12 @@ dayofwedding = Dayofwedding(Token)
 rezero = Rezero(Token)
 blackclover = BlackClover(Token)
 thatTimeIgotReincarnatedasASlime = ThattimeIgotreincarnatedasAslime(Token)
-tokyorevengers = TokyoRevengers(Token)
+
 truebeauty = Truebeauty(Token)
 soloLeveling = Sololeveling(Token)
 loghorizen = Loghorizen(Token)
 thedailylifeofimmortalking = ThedailylifeofimmortalKing(Token)
-
+tokyorevengers = TokyoRevengers(Token)
 
 
 def help(update, context):

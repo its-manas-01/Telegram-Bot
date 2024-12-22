@@ -1,7 +1,7 @@
 from telegram.ext import Updater, CommandHandler
 
 class TokyoRevengers:
-    def _init_(self,Token):
+    def __init__(self,Token):
         self.updater = Updater(Token)
         self.dispatcher = self.updater.dispatcher
         
