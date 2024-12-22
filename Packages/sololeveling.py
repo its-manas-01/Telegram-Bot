@@ -22,5 +22,6 @@ class Sololeveling:
             Episode 10: https://www.udlinks.com/bWsr
             Episode 11: https://www.udlinks.com/2u6v11
             Episode 12: https://www.udlinks.com/zBjJ
-        """)
+        """
+        )
     
