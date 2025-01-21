@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "android",
+            "request": "launch",
+            "name": "Launch App",
+            "appSrcRoot": "${workspaceRoot}/app/src/main",
+            "apkFile": "${workspaceRoot}/app/build/outputs/apk/app-debug.apk",
+            "adbSocket": "localhost:5037",
+            "autoStartADB": true,
+            "staleBuild": "warn",
+            "targetDeviceID": "emulator-5554"
+        }
+    ]
+}
